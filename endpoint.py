@@ -4,9 +4,9 @@ from dataDict import data
 
 # URL for the web service, should be similar to:
 # 'http://8530a665-66f3-49c8-a953-b82a2d312917.eastus.azurecontainer.io/score'
-scoring_uri = 'http://631d64dd-7fc2-4f1f-a6a6-4cdd4625d48c.southcentralus.azurecontainer.io/score'
+scoring_uri = 'http://6fdee2c8-b1fb-4820-8a1c-529c5cefb96b.southcentralus.azurecontainer.io/score'
 # If the service is authenticated, set the key or token
-key = 'MfXlarWuOCNh8yzGgwJicUuXX9aLWlV6'
+key = 'vwYPRsml5isrAIlkKVeS28nBwYtVa3u3'
 
 
 # Convert to JSON string
