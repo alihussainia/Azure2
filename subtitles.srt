@@ -1,0 +1,91 @@
+﻿0
+00:00:10,000 --> 00:00:21,000
+Unknown Speaker  0:02  
+
+1
+00:00:22,000 --> 00:00:33,000
+Greetings. So in today's video, what we are going
+
+2
+00:00:34,000 --> 00:00:45,000
+Unknown Speaker  0:09  
+
+3
+00:00:46,000 --> 00:00:57,000
+to
+
+4
+00:00:58,000 --> 00:01:09,000
+Unknown Speaker  0:10  
+
+5
+00:01:10,000 --> 00:01:21,000
+cover is this project of Udacity as your machine learning scholarship, so in this project, what we are going to do, first of all, is that we have to create an automated ml model. So in order to do that, we have to come here on this automatic tab and have to create on new model. And then we have to select this dataset that inform a little bit. Okay, so this bank marketing data set, we have to select this ad next, and then we have to fill up some of the configurations and then simply we have to click on the Create button. So I'm not going to do that because I have already done that. So and here is my model. Here, run one, okay. So as you can see that status is company like it's completed. And when you click on it, we can see that this run one shows best model somebody like in this run the Azure auto ml detected that this model is going to be the best model for our data set. So the algorithm is next f scaler. And XC boost classifier. Okay, so as you can see that the status is completed. And as well as the deployment status is succeeded, which means that deployment is also completed. And the accuracy is 91 point 9.8%. Okay, so now, I hope you can see much better. So let's check some other models as well. So here are some of the other models to which auto auto ml detected. But of course, as you can see that maximum scalar XC boost classifier is giving the maximum accuracy. Okay, so let's click on this model to explore it further. And Yep. And here are some metrics regarding that. So the round of accuracy is 92%. And some other metrics. And here are some charts related to this run. And in addition to the particular maximum scalar, and energy boost classifier, okay, then, next step was the deployment. So, when we are talking about the deployment thing, to when we want to deploy a model, we have to click on this button. And this will take us to a tab and we have filled up all the details. So I've already done that. So that's what lets us click on the deploy status. And on this, so what this link has done, it has took me to the deployment endpoint. So demo model, demo dash model, test deploy is the name of our endpoint. So as you can see that the department is healthy, the status is healthy. And here's the REST endpoint, as well, as you can see that key based authentication is also enabled. Furthermore, you as you can see that there's Application Insights enabled it here. It's studying true. So it wasn't true at first, but I did it. How? By simply navigating to the files directory, and in the files. Let's open up Git Bash here. And then what I just did, first of all, I checked, which are the files we have so right now we are interested in locks.tv. That is going to enable the authentication for this. So for that, for running that you have to type Python space law dot v one. And
+
+6
+00:01:22,000 --> 00:01:33,000
+Unknown Speaker  5:09  
+
+7
+00:01:34,000 --> 00:01:45,000
+I'm sorry, I did a little mistake. The spelling is last dot v and not not.vi. Okay, I mean, it's going to take one second to do. And here are all the logs, as you can see, right. So these are all the logs. So this thing made the authentication enabled.
+
+8
+00:01:46,000 --> 00:01:57,000
+Unknown Speaker  5:39  
+
+9
+00:01:58,000 --> 00:02:09,000
+And
+
+10
+00:02:10,000 --> 00:02:21,000
+Unknown Speaker  5:42  
+
+11
+00:02:22,000 --> 00:02:33,000
+like the application and search enabled to locks, made this abrasion search enabled to true. And we, we did authentication like the slider we use the slider to when we were deploying that we want authentication enabled. Okay, then afterwards. Let's move on to data sets. So yeah, so the data set which we are using is bank marketing data set. In this data set, there are 21 columns here. So in this data set, there are 21 columns and almost 10,000 rows in total 10,000 rows. Okay. So these are all the 21 features of columns. Okay, and why is a target column
+
+12
+00:02:34,000 --> 00:02:45,000
+Unknown Speaker  6:50  
+
+13
+00:02:46,000 --> 00:02:57,000
+now.
+
+14
+00:02:58,000 --> 00:03:09,000
+Unknown Speaker  6:56  
+
+15
+00:03:10,000 --> 00:03:21,000
+And now further moving towards experiment side. So these were our experiments. I'm going to talk about the pipeline eligible data. So here is auto ml run experiments. And here you can see that run one, which we just explored earlier, is completed. So afterwards, the pipeline's Okay, so before talking about the pipeline, let's discuss the model. So, here is a model, the auto ml model rich is hosted here. Okay. And then here is our endpoint. And as you can see, demo, dash model, test deploy endpoint is present here, when you click on it, it will again take us to re upload earlier. Okay, then now, now, let's talk about the pipeline, but before talking about the pipeline, let's discuss this notebook. So, this is the Jupyter Notebook that we have used to deploy the pipeline okay. And as you can see, this whole work has been done to deploy pipeline. Okay, and one thing I would like to mention here is run details. So, the running detail widget is used to show the steps Okay. Then afterwards, let's jump into pipelines. Okay. So, while talking about the pipeline, I as you can see, there are several so I was trying out different options in order to learn more about this. So, the one we which we are interested at the moment is the pipeline with auto step. Okay. Let's click on it. and here we can see that the status is completed. And plus, if we just remove it in here, you can also see that it is using banned marketing data set and caught our module here is present which is completed. Okay, it is completed. Then, click on this step. You can see that the step name was otter module and 512 So run number four.
+
+16
+00:03:22,000 --> 00:03:33,000
+Unknown Speaker  10:05  
+
+17
+00:03:34,000 --> 00:03:45,000
+Okay.
+
+18
+00:03:46,000 --> 00:03:57,000
+Unknown Speaker  10:09  
+
+19
+00:03:58,000 --> 00:04:09,000
+So again, coming back to pipelines. So this was the pipeline that we use. Another thing is the pipeline endpoint. So, bank marketing spaceplanes, this is a pipe endpoint. And here you can see that the pipeline which we created using a notebook, so it's the published pipeline status is active. And here is the rest point you are also shown. Okay. So now, let's move a little bit towards the the swagger point of view that how we can check whether our API whether our endpoint is working fine or not. So again, we will come to our Git Bash. Let's clear the screen. So in order to check the swagger UI, that whether our endpoint is working or not, what we can do simple, we have to first switch towards the swagger directory. Here, we will find three files. And first, we have to type this swagger shall file and after this now, when we will tap this, it will grab the latest image of Docker. And then we have to type Python, sir. Okay, maybe it would be better to clear the screen so that you can see what 510 sir, dot v1. Okay. And what this will do, this will give us an STL HTTP and local host. Networking to us, which will map to a boat. Okay? It's like working on the behind. So let me show you. So this is how it's going to look like. And this, this will be the basic UI. And in that we have to write down HTTP localhost, colon 8000 and slash swagger dot JSON file. So if you move back, so you will find here that in swagger directory, there are three files swagger dot JSON, serve, and so on. So, the question here comes how I got this swagger train file. So let's come back to the endpoints to our endpoint. And here, here is the swagger URL mentioned from which I caught the swagger dot JSON file okay then and how I got the okay. So, let's get for a bit we have seen what we have had to so here we can like simply use it, I have already deployed so when we will like click on this blue button, it will render out a page like this. And here it will show us that this is how the data is required. This whole thing is based on swagger documentation. So this is how the data is acquired and in JSON format. And this is how our result is going to be like okay, so this is the response and this is the like parameter input. Okay. So, that was it for the swagger part. And now coming back to VM. So here, let's say if you want to check out whether endpoint is working on not from our terminal, so we can type Python and point dot p y But one thing I remember that we had to switch
+
+20
+00:04:10,000 --> 00:04:21,000
+Unknown Speaker  15:04  
+
+21
+00:04:22,000 --> 00:04:33,000
+the directory to parent, okay and now we have to type by hand and wine door DUI and Enter. And here you can see that here comes the resort there is response the reserve yes or not. So, either the response will be yes or no. Okay. So that was it from the endpoints perspective. Now what Now we also can benchmark it by using bash, bench mod.sh and Enter. And here you can see the old benchmark results. Okay, the 200 means that everything is working fine. It's working. Okay. So, I believe that that was it from the physics point of view. We have almost mentioned everything. The pipeline, published pipelines. Everything on. So that was it. I hope you have liked this demo and you would definitely try this project out by your own self. Thank you for watching.
+
+22
+00:04:34,000 --> 00:05:00,000
+Transcribed by https://otter.ai
