@@ -98,6 +98,8 @@ We get the same Bank Marketing Dataset and define a pipeline with an automl step
 A screen recording of the project in action:
 https://youtu.be/PkplHmVNjNs
 
+Subtitles file (srt) can be found at ![Subtitles.srt](https://github.com/alihussainia/Azure2/blob/master/subtitles.srt)
+
 ## Standout Suggestions Attempted
 The project attempted to load-test the deployed model by utilizing the capabilities of Apache Benchmark.
 
